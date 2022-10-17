@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/right.css">
+    <link rel="stylesheet" href="./css/signature.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <div class="cont l">
+        <div class="v">
+            <!-- <img class="bk" src="./cardTemp.png" alt=""> -->
+            <img class="top show" src="./icons/topbox.svg" alt="">
+            <img class="shicon show" src="./icons/shaleIcon.png" alt="">
+            <div class="sigc show ready">
+                <span>Signature</span>
+                <img class="sig" src="./icons/sigBk.svg" alt="">
+                <canvas id="signature-pad"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="cont r">
+        <img src="./icons/id_top.svg">
+        <img class="shicon show" src="./icons/shaleIcon.png">
+        <div class="info">
+            <img class="logo show" src="./logos/Millennium.png">
+            <span class="shName top">ミレニアムサイエンススクール</span>
+            <span class="shName bott">Millemium</span>
+            <div class="mid">
+                <img src="./Aris.png">
+                <div class="cont">
+                    <div>
+                        <span>学生番号</span>
+                        <span id="num">A204E0052</span>
+                    </div>
+                    <div>
+                        <span>部活</span>
+                        <span id="club">ゲーム開発部</span><img class="club_img" src="./game_icon.png" alt="">
+                    </div>
+                    <div>
+                        <span>生年月日</span>
+                        <span>12月 15日</span>
+                    </div>
+                    <div>
+                        <span>氏名</span>
+                        <ruby></ruby>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <span class="text">上記の生徒は本校の学生であることを証明する。
+                    ミレニアム科学学校 校長
+                </span>
+                <div class="hanko">
+                    <span class="t">ミレニアム
+                        科学学校
+                        校生長</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="cover">
+            <a href="#modal-options" class="button call-modal"><button>edit?</button></a>
+        </div>
+    </div>
+    <section class="modal--show" id="modal-options" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+        aria-hidden="true">
+        <div class="modal-inner">
+            <header>
+                <h2 id="modal-label">Edit Options</h2>
+            </header>
+
+            <form id="edit">
+                <div class="modal-content">
+                    <div>
+                        <label>custom?</label>
+                        <input type="checkbox" name="custom">
+                    </div>
+                    <div>
+                        <label>Location</label>
+                        <div class="loc">
+                            <select name="loc" id="loc">
+                                <option value="Abydos">アビドス</option>
+                                <option value="Gehenna">ゲヘナ</option>
+                                <option value="Millennium" selected>ミレニアム</option>
+                                <option value="Trinity">トリニティ</option>
+                                <option value="Haykkiyako">百鬼夜行</option>
+                                <option value="Shanhaijin">山海経</option>
+                                <option value="RedWinterUni">レッドウィンター</option>
+                                <option value="Valkyrie">ヴァルキューレ</option>
+                                <option value="SRT">SRT</option>
+                                <option value="Arius">アリウス</option>
+                                <option value="Schale">シャーレ</option>
+                                <option value="Extra">エキストラ</option>
+                            </select>
+                            <img class="locSel" src="./logos/Millennium.png">
+                        </div>
+                    </div>
+                    <div>
+                        <label>ID</label>
+                        <input type="text" name="id" placeholder="A204E0052">
+                    </div>
+                    <div class="club">
+                        <label>club (部活)</label>
+                        <input type="text" name="club" placeholder="ゲーム開発部">
+                        <!-- <img class="clubIcon" width="50px" height="20px"> -->
+                        
+                        <label>club icon</label>
+                        <input type="file" name="clubIcon">
+                    </div>
+                    <div>
+                        <label>生年月日</label>
+                        <input type="date" name="btd" value="2000-12-15">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal" data-close="Close">×</a>
+    </section>
+</body>
+
+</html>

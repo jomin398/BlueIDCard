@@ -1,0 +1,55 @@
+.sigc {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    width: 180px;
+    height: 90px;
+}
+
+.sigc canvas {
+    display: none;
+    position: absolute;
+    background: transparent;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+}
+
+
+.sigc span {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    font-size: 2px;
+    color: #cfcfcf;
+    top: -4px;
+    left: 7px;
+}
+
+.sigc.ready {
+    border: 1px solid #e2e2e2;
+}
+
+.sigc.ready canvas {
+    display: block;
+}
+
+.sigc.ready .sig {
+    border: 1px dashed #cfcfcf;
+}
+
+.sigc.ready span {
+    display: block;
+}
+
+.sig {
+    position: relative;
+    transform: rotate(90deg) translateX(-21px) translateY(-57px) scaleX(1.25) scaleY(1.32);
+}
+
+.sigc.show {
+    display: block;
+}

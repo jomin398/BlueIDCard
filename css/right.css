@@ -1,0 +1,155 @@
+img[src=""] {
+    border: 1px solid black;
+}
+
+.cont.r .shicon {
+    width: 120px;
+    height: 120px;
+    left: unset;
+    top: 45px;
+    right: -10px;
+}
+
+.cont.r .info {
+    width: inherit;
+    height: 200px;
+    margin-top: -43px;
+}
+
+.cont.r ruby {
+    font-size: 20px;
+    z-index: 1;
+}
+
+.info .logo {
+    display: none;
+    position: absolute;
+    top: -15px;
+    width: 80px;
+    height: 80px;
+    left: 6px;
+}
+
+.info .logo.show {
+    display: block;
+}
+
+.info .shName.top {
+    position: absolute;
+    letter-spacing: -1.6px;
+    left: 80px;
+    font-weight: bolder;
+}
+
+.info .shName.bott {
+    position: absolute;
+    letter-spacing: -0.7px;
+    top: 38px;
+    left: 67px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-text-stroke: thin;
+}
+
+.mid {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    width: inherit;
+    align-items: stretch;
+}
+
+.mid .cont {
+    display: flex;
+    background: unset;
+    width: 100%;
+    font-size: 13px;
+    margin: 0;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.mid .cont div {
+    display: flex;
+    align-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.mid .cont div span {
+    display: flex;
+    align-items: center;
+}
+
+.mid .cont div :nth-child(2) {
+    margin-left: 5px;
+}
+
+.mid .cont div:nth-child(2) :last-child {
+    flex: unset;
+}
+
+.mid .cont div :last-child {
+    flex: 1;
+}
+
+.mid img {
+    width: 80px;
+    height: 80px;
+    margin: 0 5px;
+}
+
+.mid .club_img {
+    border: 1px solid black;
+    width: 50px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: unset;
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.info .bottom .text {
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    white-space: pre-line;
+}
+
+.hanko {
+    border: 1px solid #ED1B23;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #ED1B23 inset;
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+    margin-bottom: -3px;
+    padding: 0.5px;
+}
+
+.hanko .t {
+    font-weight: bold;
+    color: #ED1B23;
+    font-family: 'hanko', 'Courier New', Courier, monospace;
+    letter-spacing: -7px;
+    font-size: 17px;
+    text-align: center;
+    white-space: pre-line;
+    border: 1px solid #ED1B23;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-left: 1px;
+    display: flex;
+}

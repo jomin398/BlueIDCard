@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont {
+    background: repeating-linear-gradient(332deg,
+            #ffffff,
+            #ffffff 5px,
+            #e7e7e7 5px,
+            #e7e7e7 10px);
+    position: relative;
+    margin: auto;
+
+}
+
+.cont.l {
+    width: 202px;
+    height: 320px;
+    min-width: 202px;
+    min-height: 320px;
+    padding: 6px;
+}
+
+.cont.r {
+    width: 320px;
+    height: 202px;
+    min-width: 320px;
+    min-height: 202px;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+.v {
+    width: inherit;
+    height: inherit;
+    min-width: inherit;
+    min-height: inherit;
+    background-color: #fff;
+}
+
+.bk {
+    width: 202px;
+    height: 320px;
+    position: absolute;
+    z-index: -1;
+}
+
+.shicon {
+    display: none;
+    width: 175px;
+    height: 170px;
+    left: 19px;
+    top: 35px;
+    position: absolute;
+}
+
+.v .top {
+    display: none;
+    position: absolute;
+    top: -1px;
+    right: 42px;
+    height: 70px;
+    z-index: 20;
+    transform: rotate(90deg);
+}
+
+.v .top.show {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.cont.r .cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition: .5s ease;
+    background-color: #d3d3d3b3;
+    z-index: 2;
+}
+
+.cont.r:hover {
+    border: 1px dashed #808080;
+    opacity: 0.5;
+}
+
+.cont.r:hover .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    color: #000000;
+}
+.loc{
+    display: flex;
+    justify-content: space-between;
+}
+form#edit img.locSel {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    object-position: center center;
+}
+.club{
+    display: flex;
+    justify-content: space-between;
+}
+@font-face {
+    font-family: "hanko";
+    src: url('../fonts/DFShinTen-W5-WIN-RKSJ-H-01.ttf') format('truetype');
+}
