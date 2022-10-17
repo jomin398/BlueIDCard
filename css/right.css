@@ -111,7 +111,7 @@ img[src=""] {
 }
 
 .bottom {
-  width: 100%;
+  width: 325px;
   position: absolute;
   bottom: 0;
   display: flex;

@@ -103,20 +103,34 @@ body {
     font-weight: bolder;
     color: #000000;
 }
-.loc{
+
+.loc {
     display: flex;
     justify-content: space-between;
 }
+
 form#edit img.locSel {
     width: 100px;
     height: 100px;
     object-fit: scale-down;
     object-position: center center;
 }
-.club{
+
+.club {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.modal--show .modal-content>* {
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+.name ruby {
+    font-size: 20px;
+}
+
 @font-face {
     font-family: "hanko";
     src: url('../fonts/DFShinTen-W5-WIN-RKSJ-H-01.ttf') format('truetype');
