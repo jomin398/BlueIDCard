@@ -131,6 +131,10 @@ form#edit img.locSel {
     font-size: 20px;
 }
 
+.toolTip {
+    color: #808080;
+}
+
 @font-face {
     font-family: "hanko";
     src: url('../fonts/DFShinTen-W5-WIN-RKSJ-H-01.ttf') format('truetype');

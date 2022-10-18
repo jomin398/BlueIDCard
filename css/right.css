@@ -82,6 +82,7 @@ img[src=""] {
 .mid .cont div span {
   display: flex;
   align-items: center;
+  /* text-align: center; */
 }
 
 .mid .cont div :nth-child(2) {
